@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+    <!-- Barra de navegación  -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="cabecera">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./ejercicio0.html">Cheems FanClub</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <!-- Active hace que se vea de otro color el ítem <nav-bar> <active>  -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About cheems</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Galery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Foro</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="containerCarousel mx-auto">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/chems4.jpg" class="d-block w-100" alt="Perro_cheems_art" height="">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/chems2.jpg" class="d-block w-100" alt="Perro_cheems_art">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/chems3.jpg" class="d-block w-100" alt="Perro_cheems_art">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Título de bienvenida -->
+    <h1 class="titulo1">Bienvenidos Cheem's Lovers</h1>
+    <h2 class="titulo1">Outfits favoritos de nuestro querido cheems </h2>
+
+    <!-- Tabla de Cards -->
+    <div class="container" id="tablaCards">
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 cuadroCard">
+                <div class="card" style="width: 20rem;">
+                    <img src="./assets/cout1.png" class="card-img-top" alt="Cheemsito con frio">
+                    <div class="card-body">
+                        <p class="card-text">Outfit 1: cheemsito con frio y comiendo un pancito </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 cuadroCard">
+                <div class="card" style="width: 20rem;">
+                    <img src="./assets/cO2.webp" class="card-img-top" alt="Cheemsito Rey">
+                    <div class="card-body">
+                        <p class="card-text">Outfit 2: cheemsito rey con capita y corona (sin palabras) </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 cuadroCard">
+                <div class="card" style="width: 20rem;">
+                    <img src="./assets/cO3.webp" class="card-img-top" alt="Cheemsito Rey">
+                    <div class="card-body">
+                        <p class="card-text">Outfit 3: cheemsito explorador listo para la aventura </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 cuadroCard">
+                <div class="card" style="width: 20rem;">
+                    <img src="./assets/c06.jpg" class="card-img-top" alt="Cheemsito Rey">
+                    <div class="card-body">
+                        <p class="card-text">Outfit 4: OMG, cheemsito vaquero badboy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-sm-12 cuadroCard">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-primary">Estado de ánimo: Feliz con shu pancito</li>
+                    <li class="list-group-item list-group-item-secondary">Su nombre real es Balltze</li>
+                    <li class="list-group-item list-group-item-success">Misión completada: Outfit aprobado</li>
+                    <li class="list-group-item list-group-item-danger">¡Alerta! Cheems se quedó sin snacks</li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-sm-12 cuadroCard">
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-warning">Cuidado: Riesgo de risa (o ternura) extrema</li>
+                    <li class="list-group-item list-group-item-info">Dato: Cheems apareció por primera vez en 2017</li>
+                    <li class="list-group-item list-group-item-light">Estado actual: Cheems está descamsando</li>
+                    <li class="list-group-item list-group-item-dark">Leyenda urbana: El origen del Bonk</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid footerContainer bg-light">
+        <div class="row">
+            <div class="col-sm-12 col-lg-4 cuadroFooter">
+                <p>Sobre nosotros</p>
+                <ul class="listaFooter">
+                    <li>Quiénes somos</li>
+                    <li>Historia de Cheems</li>
+                    <li>Contacto</li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-lg-4 cuadroFooter">
+                <p>Comunidad</p>
+                <ul class="listaFooter">
+                    <li>Únete al foro</li>
+                    <li>Instagram: @cheemsfanclub</li>
+                    <li>Twitter/X: @cheems_memes</li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-lg-4 cuadroFooter">
+                <p>Frases Memorables</p>
+                <ul class="listaFooter">
+                    <li>Approved by Cheems since 2017</li>
+                    <li>Derechos reservados 2025 © Cheems FanClub</li>
+                    <li>Powered by Memes & Pancito</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
